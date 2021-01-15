@@ -12,6 +12,11 @@ def init_tracer(service):
                 'type': 'const',
                 'param': 1,
             },
+            'local_agent':{
+                'reporting_host': ''
+            },
+            'propagation': 'b3',
+            'JAEGER_TRACEID_128BIT': True,
             'logging': True,
             'reporter_batch_size': 1,
         },
